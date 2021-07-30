@@ -23,7 +23,7 @@ jobs:
             AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
           run: |
             aws batch submit-job \
-            --region eu-west-1 \
+            --region us-east-1 \
             --job-name nf-core-awstest \
             --job-queue $AWS_JOB_QUEUE \
             --job-definition $AWS_JOB_DEFINITION \
